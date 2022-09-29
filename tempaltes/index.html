@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>QR Code Generator And Decoder</title>
+</head>
+<style>
+    .qrco {
+        margin-left: 79px;
+        margin-top: 120px;
+      }
+    .createqr {
+        width: 245px;
+        height: 62px;
+    }
+    .scanqr {
+        width: 245px;
+        height: 62px;
+    }.btn.btn-success {
+        font-size: 30px;}
+        .btn.btn-success {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            font-family: cursive;
+          }
+          
+          .btn.btn-success:hover {background-color: #3e8e41}
+          
+          .btn.btn-success:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }.main {
+            border: 2px solid #f0f0f0;
+            height: 293px;
+            width: 1111px;
+            margin-left: 185px;
+            margin-top: -104px;
+            background-color: #f2f0ec;
+            border-radius: 13px;
+          }
+          h1 {
+            font-size: 4.5rem;
+            margin-left: 248px;
+            margin-top: 94px;
+            font-family: serif;
+          }.qrco {
+            margin-left: 144px;
+            margin-top: 160px;
+          }.createqr {
+            margin-right: 246px;
+        }
+        @media (max-width:900px) {
+            .qrco {
+                margin-left: 3px;
+                margin-top: -69px;
+              }.createqr {
+                margin-bottom: 39px;
+                margin-top: 150px;
+              }.btn.btn-success {
+                padding: 2px 7px;
+                font-size: 33px;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                color: #fff;
+                background-color: #04AA6D;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+                font-family: cursive;
+              }.createqr {
+                margin-bottom: 51px;
+                margin-top: 150px;
+              }.createqr {
+                width: 369px;
+                height: 53px;
+              }.scanqr {
+                width: 368px;
+                height: 62px;
+              }
+              .main {
+                border: 2px solid #f0f0f0;
+                height: 326px;
+                width: 700px;
+                margin-left: 0%;
+                margin-top: -44px;
+                background-color: #f2f0ec;
+                border-radius: 13px;
+              }h1 {
+                font-size: 64px;
+                margin-left: 14px;
+                margin-top: 119px;
+                font-family: serif;
+              }
+        }
+</style>
+<body>
+    <section>
+        <h1>QR Code Generator And Decoder</h1>
+        <div class="main">
+            <div class="qrco">
+                <button type="button" class="btn btn-success  createqr" onclick="createqrcode()">Create QR Code</button>
+                <button type="button" class="btn btn-success  scanqr" onclick="scanqrcode()">Scan QR Code</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function createqrcode(){
+        window.location = "create.html";
+    }
+    function scanqrcode(){
+        window.location = "scan.html";
+    }
+</script>
+</html>
